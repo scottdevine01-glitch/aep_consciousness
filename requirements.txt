@@ -1,0 +1,65 @@
+# Core Scientific Computing
+numpy>=1.21.0
+scipy>=1.7.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+
+# Neural Data Analysis & Neuroscience
+nilearn>=0.9.0
+mne>=1.0.0
+nibabel>=3.2.0
+antspy>=0.2.0
+
+# Information Theory & Complexity Measures
+dit>=1.3.0
+pyitlib>=0.2.0
+nolds>=0.5.0
+entropy>=0.2.0
+
+# Network Analysis & Graph Theory
+networkx>=2.6.0
+bctpy>=0.5.0
+graph-tool>=2.43
+
+# Signal Processing & Time Series
+pyts>=0.12.0
+spectrum>=0.8.0
+PyWavelets>=1.1.0
+
+# Quantum Computing & Simulations
+qutip>=4.6.0
+projectq>=0.5.0
+cirq>=0.13.0
+
+# Cosmology & Astrophysics
+astropy>=5.0.0
+camb>=1.3.0
+classylss>=0.2.0
+healpy>=1.15.0
+
+# Visualization & Plotting
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.0.0
+bokeh>=2.4.0
+
+# Statistical Analysis & Testing
+statsmodels>=0.13.0
+pingouin>=0.5.0
+pymc>=4.0.0
+emcee>=3.1.0
+
+# Utilities & Configuration
+pyyaml>=6.0
+tqdm>=4.62.0
+joblib>=1.1.0
+psutil>=5.8.0
+
+# Jupyter for Interactive Analysis
+jupyter>=1.0.0
+ipywidgets>=7.6.0
+
+# Code Quality & Development
+black>=22.0.0
+flake8>=4.0.0
+pytest>=6.2.0
