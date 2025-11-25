@@ -1,45 +1,46 @@
-# Anti-Entropic Principle (AEP): A Unified Framework
+# Anti-Entropic Principle (AEP) - Unified Framework
 
-This repository contains the official implementation and resources for the paper:
+This repository contains the implementation, data, and analysis scripts for the paper:
 
 **"The Anti-Entropic Principle: Unified Solutions to Consciousness, Quantum Foundations, and Cosmological Problems"**
 
-by Scott Devine
+by Scott Devine.
 
-## Overview
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXX) *<<-- (Optional but recommended: Get a DOI for your code from Zenodo)*
 
-The Anti-Entropic Principle (AEP) posits that physical laws minimize total descriptive complexity \(K(T)+K(E|T)\). This framework provides unified solutions to:
-- The Hard Problem of Consciousness
-- The Quantum Measurement Problem
-- The Cosmological Constant Problem
+## Abstract
 
-This repository provides code for replicating the results and testing the predictions outlined in the paper.
+Foundational problems persist across multiple domains of science: the hard problem of consciousness, the quantum measurement problem, and the cosmological constant problem. Traditional approaches address these problems in isolation. We demonstrate that the Anti-Entropic Principle (AEP)--which states that physical laws minimize total descriptive complexity \(K(T)+K(E|T)\)--provides unified solutions across all these domains.
 
-## Contents
+This repository provides the computational framework to validate the AEP's predictions in neuroscience, quantum foundations, and cosmology.
 
-- `/neural_compression` - Code for calculating neural complexity metrics (Intrinsic Dimensionality, Predictive Complexity, Φ, etc.)
-- `/quantum_simulations` - Simulations for context-dependent quantum measurement and collapse thresholds.
-- `/cosmological_models` - Code for cosmological parameter optimization and predictions (e.g., \(f_{NL}^{\text{equil}}\), tensor-to-scalar ratio \(r\)).
-- `/data_analysis` - Pipelines for statistical analysis and figure generation.
+## Repository Structure
 
-## Installation & Usage
+*   `01_neural_compression/`: Code to compute the six neural compression metrics (Intrinsic Dimensionality, Predictive Complexity, etc.) and reproduce the consciousness-related predictions.
+*   `02_quantum_foundations/`: Simulations for context-dependent quantum collapse based on the AEP measurement criterion.
+*   `03_cosmological_sims/`: Code for cosmological simulations predicting \(f_{\text{NL}}^{\text{equil}} = -0.416\), \(r < 10^{-4}\), and scale-dependent growth.
+*   `04_unified_framework/`: Implementations of the unified mathematical framework and master compression equation.
+*   `utilities/`: Shared helper functions and configuration.
 
-[Describe how to install dependencies and run the code here. For example:]
-1. Clone the repo: `git clone https://github.com/your-username/aep_consciousness.git`
-2. Install requirements: `pip install -r requirements.txt`
-3. Run a specific module...
+## Installation & Requirements
 
-## Predictions & Experimental Validation
+1.  Clone this repository:
+    ```bash
+    git clone https://github.com/your-username/aep_consciousness.git
+    cd aep_consciousness
+    ```
+2.  We recommend using a Python virtual environment.
+3.  Install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
+    *(You will need to create this `requirements.txt` file listing your dependencies, e.g., `numpy`, `scipy`, `matplotlib`, `scikit-learn`)*
 
-This framework makes testable predictions in:
-- **Neuroscience:** Specific neural compression signatures during conscious states (see `neural_compression/`)
-- **Quantum Foundations:** Context-dependent collapse (see `quantum_simulations/`)
-- **Cosmology:** Specific values for \(f_{NL}^{\text{equil}} = -0.416 \pm 0.08\) and \(r < 10^{-4}\) (see `cosmological_models/`)
+## Usage
 
-## License
+Each module is designed to be run independently. Please see the specific `README` file within each numbered directory for detailed instructions.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Citation
-
-If you use this code or the ideas in your work, please cite:
+**Example: Reproducing Neural Compression Signatures**
+```bash
+cd 01_neural_compression/scripts
+python calculate_intrinsic_dimensionality.py --input ../data/sample_fmri.npy
