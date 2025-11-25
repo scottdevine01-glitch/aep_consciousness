@@ -1,0 +1,16 @@
+from modules.cosmology_fitting import AEPCosmology
+
+cosmo = AEPCosmology()
+
+# Define observational constraints
+observations = {
+    'H0_measured': 73.0,
+    'cmb_amplitude': 1.0,
+    'f_nl_measured': -0.4
+}
+
+# Optimize parameters
+initial_guess = {'H0': 70, 'Omega_m': 0.3, 'f_nl': -0.5}
+result = cosmo.optimize_parameters(initial_guess, observations)
+
+print("Optimal parameters:", result.optimal_params)
